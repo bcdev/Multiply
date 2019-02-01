@@ -1,0 +1,41 @@
+<filesystem>
+
+    <folder name="Actions">
+        <folder name="Operators">
+            <file name="org-esa-snap-multiply-tools-preprocessing-ModisTileExtractionOpAction.instance">
+                <attr name="instanceCreate" methodvalue="org.openide.awt.Actions.alwaysEnabled"/>
+                <attr name="delegate" methodvalue="org.esa.snap.core.gpf.ui.DefaultOperatorAction.create"/>
+                <attr name="operatorName" stringvalue="MULTIPLY.ModisTileExtraction"/>
+                <attr name="displayName" stringvalue="MODIS Tile Extraction"/>
+                <attr name="dialogTitle" stringvalue="MODIS Tile Extraction v0.8"/>
+                <attr name="helpId" stringvalue="multiplyToolsDoc"/>  <!--The helpId if help contents is provided-->
+                <attr name="targetProductNameSuffix" stringvalue="_multiply"/>
+                <attr name="ShortDescription" stringvalue="Reprojects source onto given MODIS tile."/>
+            </file>
+        </folder>
+    </folder>
+
+    <folder name="Menu">
+        <folder name="Optical">
+            <folder name="Preprocessing">
+                <folder name="MULTIPLY Tools">
+                        <attr name="displayName" stringvalue="MULTIPLY Tools"/>
+                        <attr name="position" intvalue="311"/>
+                        <file name="org-esa-snap-multiply-tools-preprocessing-ModisTileExtractionOpAction.shadow">
+                            <attr name="originalFile"
+                                  stringvalue="Actions/Operators/org-esa-snap-multiply-tools-preprocessing-ModisTileExtractionOpAction.instance"/>
+                            <attr name="position" intvalue="1"/>
+                        </file>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="org-esa-snap-snap-multiply-tools-helpset.xml" url="helpset.xml">
+                <attr name="position" intvalue="3600"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>
