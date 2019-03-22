@@ -38,11 +38,13 @@ class TileExtractor {
         repro.setParameter("easting", easting);
         repro.setParameter("northing", northing);
         repro.setParameter("crs", SnapMultiplyConstants.MODIS_SIN_PROJECTION_CRS_STRING);
-        repro.setParameter("resampling", "Nearest");
+        // repro.setParameter("resampling", "Nearest");  // we may get artefacts at tile boundaries with this one
+        repro.setParameter("resampling", "Bilinear");
         repro.setParameter("includeTiePointGrids", true);
         repro.setParameter("referencePixelX", 0.0);
         repro.setParameter("referencePixelY", 0.0);
         repro.setParameter("orientation", 0.0);
+        repro.setParameter("noDataValue", "NaN");
 
         // scale factor > 1 increases pixel size and decreases number of pixels;
         final double pixelSizeX = SnapMultiplyConstants.MODIS_SIN_PROJECTION_PIXEL_SIZE_X * scaleFactor;

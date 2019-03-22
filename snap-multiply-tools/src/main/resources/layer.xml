@@ -7,7 +7,7 @@
                 <attr name="delegate" methodvalue="org.esa.snap.core.gpf.ui.DefaultOperatorAction.create"/>
                 <attr name="operatorName" stringvalue="MULTIPLY.ModisTileExtraction"/>
                 <attr name="displayName" stringvalue="MODIS Tile Extraction"/>
-                <attr name="dialogTitle" stringvalue="MODIS Tile Extraction v0.8"/>
+                <attr name="dialogTitle" stringvalue="MODIS Tile Extraction v0.82"/>
                 <attr name="helpId" stringvalue="multiplyToolsDoc"/>  <!--The helpId if help contents is provided-->
                 <attr name="targetProductNameSuffix" stringvalue="_multiply"/>
                 <attr name="ShortDescription" stringvalue="Reprojects source onto given MODIS tile."/>

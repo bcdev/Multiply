@@ -19,7 +19,7 @@ import java.util.logging.Level;
  *
  * @author Olaf Danne
  */
-@OperatorMetadata(alias = "MULTIPLY.ModisTileExtraction", version = "0.8",
+@OperatorMetadata(alias = "MULTIPLY.ModisTileExtraction", version = "0.82",
         authors = "O.Danne, T.Fincke",
         internal = true,
         category = "Optical/Preprocessing",
