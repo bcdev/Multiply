@@ -86,7 +86,11 @@
             <artifactId>snap-netcdf</artifactId>
             <version>${snap.version}</version>
         </dependency>
-        
+        <dependency>
+            <groupId>org.esa.s3tbx</groupId>
+            <artifactId>s3tbx-sentinel3-reader</artifactId>
+            <version>${snap.version}</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
