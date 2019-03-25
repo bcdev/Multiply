@@ -44,7 +44,6 @@ class TileExtractor {
         repro.setParameter("referencePixelX", 0.0);
         repro.setParameter("referencePixelY", 0.0);
         repro.setParameter("orientation", 0.0);
-        repro.setParameter("noDataValue", "NaN");
 
         // scale factor > 1 increases pixel size and decreases number of pixels;
         final double pixelSizeX = SnapMultiplyConstants.MODIS_SIN_PROJECTION_PIXEL_SIZE_X * scaleFactor;
@@ -58,7 +57,7 @@ class TileExtractor {
         repro.setParameter("height", height);
 
         repro.setParameter("orthorectify", true);
-        repro.setParameter("noDataValue", 0.0);
+        repro.setParameter("noDataValue", "NaN");
         repro.setSourceProduct(sourceProduct);
         return repro.getTargetProduct();
     }
